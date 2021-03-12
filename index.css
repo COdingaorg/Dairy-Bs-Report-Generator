@@ -1,0 +1,79 @@
+body{
+  width: 99%;
+  box-sizing: border-box;
+  }
+nav{
+  font-size: 1.2em;
+  padding-top: 2%;
+  height: 70px;
+  width: 99%;
+  background-color: #d9d40c;
+}
+nav>a{
+  position:relative;
+  left: 20%;
+  color: white;
+  text-decoration: none;
+  position:relative;
+  left:1%;
+  padding: 1%;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #416422;
+  font-weight: bold;
+  margin: 1%, 1%, 0%, 1%;
+  font-size: 80%;
+}
+nav>a:hover{
+  background-color: #819A20;
+  color: white;
+  border: 3px solid white;
+  font-weight: 800px;
+}
+#banner{
+  background-image: url("Images/milk.jpg");
+  height: 400px;
+  background-repeat: repeat-x;
+  margin-top: -2%;
+  color: white;
+  width: 99%;
+}
+#overlay{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#overlay>h1{
+  font-size: 400%;
+  border-bottom: 2px solid white;
+  padding-bottom: 3%;
+}
+#overlay>p{
+  font-size: 200%;
+}
+.reportA, #leapyr{
+  background-color: #416422;
+  height: 350px;
+  color: white;
+  border: 2px solid #6b911b;
+  border-radius: 15px;
+  text-align: center;
+  overflow: scroll;
+  width: 99%;
+}
+#calcA, #comparisonPart{
+  overflow: scroll;
+  background-color: #819A20;
+  height: 350px;
+  padding: 3%;
+}
+#calcA, #comparisonPart, .reportA, #leapyr{
+  color: white;
+  font-size: 1.4em;
+  box-sizing: border-box;
+  width: 99%;
+}
