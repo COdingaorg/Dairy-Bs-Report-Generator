@@ -33,7 +33,7 @@
       <p>Calculator---Input price per litre</p>
       <form>
         <label for="Price Per Litre">
-          <input type="number" id="ppltr1" name="ppltr1">
+          <input placeholder="number only" type="number" id="ppltr1" name="ppltr1">
         </label>
       </form>
       <button onclick="submission()">Calculate</button><!--Submits the price and returns report-->
@@ -50,10 +50,10 @@
     <div id="comparisonPart"><!--Asks for input of old price and new price-->
       <p>Comparison between New Price and Previous Price</p>
       <form>
-        <label for="oldprice">Old Price</label>
-        <input type="number" name="oldprice" id="oldprice">
-        <label for="newprice">New Price</label>
-        <input type="number" name="newprice" name="newprice">
+        <p></p><label for="oldprice">Old Price</label>
+        <input placeholder="number only" type="number" name="oldprice" id="oldprice"></p>
+        <p></p><label for="newprice">New Price</label>
+        <input placeholder="number only" type="number" name="newprice" name="newprice"></p>
       </form>
       <button onclick="compare()">Compare</button>
       <div id="comparison"><!--prints the return comparison for new price or old price-->
