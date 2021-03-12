@@ -12,6 +12,31 @@
       <h1>Belac Dairy Farm</h1>
       <p>Report Generator</p>
     </div>
+    <div class="reportA"><!--Part that displays returns by javascript-->
+      <p>Amount of Milk produced per shed in a day</p>
+      <div id="reportA">
 
+      </div>
+      <p>Total Amount of Milk</p>
+    </div>
+    <div id="calcA"><!--Allws input for price per litre and calculates revenue-->
+      <p>Calculator---Input price per litre</p>
+      <form>
+        <label for="Price Per Litre">
+          <input type="number" id="ppltr1" name="ppltr1">
+        </label>
+      </form>
+      <button onclick="submission()">Calculate</button><!--Submits the price and returns report-->
+      <div id="revenue"><!--Shows weekly revenue, and yearly revenue-->
+
+      </div>
+    </div>
+    <div id="leapyr">
+      <p> Your revenue for leap year are as below:</p>
+      <div id="leapReport">
+
+      </div><!--returns revenue for leap yr-->
+    </div>
+   
   </body>
 </html>
