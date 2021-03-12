@@ -77,3 +77,6 @@ nav>a:hover{
   box-sizing: border-box;
   width: 99%;
 }
+#footer{
+  text-align: center;
+}
