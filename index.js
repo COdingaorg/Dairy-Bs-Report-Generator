@@ -34,3 +34,44 @@ console.log("Your weekly income will be Kshs"+" "+wktotalProd);
 console.log("Your yearly income will be Kshs"+" "+yrtotalProd);
  };
  revenue(45,7);
+ var leapYr=[
+  January={
+    name:"January",
+    Days:31},
+  February={
+    name:"February",
+    Days:28},
+  March={
+    name:"March",
+    Days:31},
+  April={
+    name:"April",
+    Days:30},
+  May={
+    name:"May",
+    Days:31},
+  June={
+    name:"June",
+    Days:30},
+  July={
+    name:"July",
+    Days:31},
+  August={
+    name:"August",
+    Days:31},
+  September={
+    name:"September",
+    Days:30},
+  October={
+    name:"October",
+    Days:31},
+  November={
+    name:"November",
+    Days:30},
+  December={
+    name:"December",
+    Days:31}
+ ];
+console.log(leapYr.length);
+
+}
