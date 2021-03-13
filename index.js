@@ -24,4 +24,13 @@ var sheds=[
   /*return ("Your Production in"+" "+sheds[i].name+" "+"is"+" "+sheds[i].litresProduced+" "+"Litres");*/
   console.log("Your Production in"+" "+sheds[i].name+" "+"is"+" "+sheds[i].litresProduced+" "+"Litres");
  };
- 
+ var totalmilkprod=sheds[0].litresProduced+sheds[1].litresProduced+sheds[2].litresProduced+sheds[3].litresProduced+sheds[4].litresProduced;
+ console.log("Your Total milk production is "+" "+totalmilkprod+" "+"Litres");
+ var revenue=function(newPrice, time){
+
+  var wktotalProd=totalmilkprod*newPrice*time;
+  var yrtotalProd=totalmilkprod*newPrice*time;
+console.log("Your weekly income will be Kshs"+" "+wktotalProd);
+console.log("Your yearly income will be Kshs"+" "+yrtotalProd);
+ };
+ revenue(45,7);
