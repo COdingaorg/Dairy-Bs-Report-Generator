@@ -35,6 +35,8 @@ var sheds=[//creates 5 sheds
    document.getElementById("reportA").innerHTML="Your Production in"+" "+sheds[i].name+" "+"is"+" "+sheds[i].litresProduced+" "+"litres"};
  };*/
  function calcTime(ppltr1, time){
+   var document.getElementById("ppltr1").value;
+   var document.getElementById("time").value;
    if (time="week"){
      document.getElementById("pricePerLitre").innerHTML="Your weekly income is"+week*ppltr1*totalMilkProd;
    }
@@ -42,4 +44,5 @@ var sheds=[//creates 5 sheds
      document.getElementById("pricePerLitre").innerHTML="Your Yearly income is"+year*ppltr1*totalMilkProd;
    };
  };
- calcTime(parseInt(document.getElementById("ppltr1").value),parseFloat(document.getElementById("time").value));
+ var function submission(){
+   calcTime(parseInt(document.getElementById("ppltr1").value),parseFloat(document.getElementById("time").value));
