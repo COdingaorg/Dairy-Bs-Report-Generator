@@ -37,7 +37,15 @@
           <input placeholder="number only" type="number" id="ppltr1" name="ppltr1">
         </label>
       </form>
-      <button onclick="submission()">Calculate</button><!--Submits the price and returns report-->
+      <div id="pricePerLitre"></div>
+      <form>
+      <input type="radio" id="time" name="week" value="week">
+      </form>
+      <form>
+        <input type="radio" id="time" name="year" value="year">
+      </form>
+      <button onclick="calcTime()">Get Income Report</button><!--Submits the price and returns report-->
+      <!--<button onclick="submission()">Calculate</button>-->
       <div id="revenue"><!--Shows weekly revenue, and yearly revenue-->
 
       </div>
