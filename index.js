@@ -37,7 +37,7 @@ document.getElementById("ppltr1").value
 //function that prints income.
 function report(sellingPrice, time) {
   parseInt(document.getElementById("ppltr1").value);
-  parseFloat(document.getElementById("time").value);
+  parseFloat(document.getElementById("time1"&&"time2").value);
   var result=sellingPrice*time*totalMilkProd;
   var week=7;
   var year=366;
