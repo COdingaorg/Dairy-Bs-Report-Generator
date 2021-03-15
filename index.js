@@ -105,7 +105,7 @@ var month12={
   days:31
 };
 var sellingPrice=45;
-document.getElementById("leapReport").innerHTML="your party party";
+document.getElementById("leapReport").innerHTML="Amount in Kshs";
 document.getElementById("january").innerHTML="Your income for"+" "+month1.name+" "+"is"+" "+month1.days*totalMilkProd;
 document.getElementById("february").innerHTML="Your income for"+" "+month2.name+" "+"is"+" "+month2.days*totalMilkProd*sellingPrice;
 document.getElementById("march").innerHTML="Your income for"+" "+month3.name+" "+"is"+" "+month3.days*totalMilkProd*sellingPrice;
