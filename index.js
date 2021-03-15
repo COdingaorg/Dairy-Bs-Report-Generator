@@ -51,7 +51,7 @@ function report(sellingPrice, time) {
         document.getElementById("yearRevenue").innerHTML="Your Yearly income is Kshs"+" "+result;
       }
     else {
-      alert("Please choose time or enter value");
+      print("Please choose time or enter value");
     };
 };
 //report(document.getElementById("ppltr1").value,document.getElementById("time").value);
@@ -104,7 +104,9 @@ var month12={
   name:"December",
   days:31
 };
-document.getElementById("january").innerHTML="Your income for"+" "+month1.name+" "+"is"+" "+month1.days*totalMilkProd*sellingPrice;
+var sellingPrice=45;
+document.getElementById("leapReport").innerHTML="your party party";
+document.getElementById("january").innerHTML="Your income for"+" "+month1.name+" "+"is"+" "+month1.days*totalMilkProd;
 document.getElementById("february").innerHTML="Your income for"+" "+month2.name+" "+"is"+" "+month2.days*totalMilkProd*sellingPrice;
 document.getElementById("march").innerHTML="Your income for"+" "+month3.name+" "+"is"+" "+month3.days*totalMilkProd*sellingPrice;
 document.getElementById("april").innerHTML="Your income for"+" "+month4.name+" "+"is"+" "+month4.days*totalMilkProd*sellingPrice;
