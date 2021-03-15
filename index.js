@@ -35,3 +35,22 @@ document.getElementById("shed4").innerHTML = "Your production in"+" "+sheds[3].n
 document.getElementById("shed5").innerHTML = "Your production in"+" "+sheds[4].name+" "+"is"+" "+sheds[0].litresProduced+" "+"Litres";
 document.getElementById("ppltr1").value
 //function that prints income.
+function report(sellingPrice, time) {
+  parseInt(document.getElementById("ppltr1").value);
+  parseFloat(document.getElementById("time").value);
+  var result=sellingPrice*time*totalMilkProd;
+  var week=7;
+  var year=366;
+    if (time=week) {
+      result=sellingPrice*week*totalMilkProd;
+      document.getElementById("weekRevenue").innerHTML="Your Weekly income is Kshs"+" "+result;
+    }
+    else if (time=year) {
+      result=sellingPrice*year*totalMilkProd;
+        document.getElementById("yearRevenue").innerHTML="Your Yearly income is Kshs"+" "+result;
+      }
+    else {
+      alert("Please choose time or enter value");
+    };
+};
+//report(document.getElementById("ppltr1").value,document.getElementById("time").value);

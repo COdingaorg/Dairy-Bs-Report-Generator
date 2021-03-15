@@ -42,19 +42,16 @@
           <input placeholder="number only" type="number" id="ppltr1" name="ppltr1">
         </label>
       </form>
-      <div id="pricePerLitre"></div>
       <form>
-      <input type="radio" id="time" name="week" value="week">
-      </form>
-      <form>
+        <input type="radio" id="time" name="week" value="week">
+        <label for="week">Week calculation</label>
         <input type="radio" id="time" name="year" value="year">
+        <label for="year">Year calculation</label>
       </form>
-      <button onclick="calcTime()">Get Income Report</button><!--Submits the price and returns report-->
+      <button onclick="report()">Get Income Report</button><!--Submits the price and returns report-->
       <!--<button onclick="submission()">Calculate</button>-->
-      <div id="revenue"><!--Shows weekly revenue, and yearly revenue-->
-
-      </div>
-    </div>
+      <div id="weekRevenue"></div><!--Shows weekly revenue-->
+      <div id="yearRevenue"></div><!--shows yearly revenue-->
     <div id="leapyr">
       <p> Your revenue for leap year are as below:</p>
       <div id="leapReport">
