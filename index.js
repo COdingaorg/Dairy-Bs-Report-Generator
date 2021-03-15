@@ -26,7 +26,7 @@ var sheds=[
     //document.getElementById("reportA").innerHTML="Your production in"+" "+sheds[i].name+" "+"is"+" "+sheds[i].litresProduced+" "+"Litres";
   };
 });*/
-var totalMilkProd=sheds[0].litresProduced+sheds[1].litresProduced+sheds[2].litresProduced+sheds[3].litresProduced+sheds[4].litresProduced;
+  var totalMilkProd=sheds[0].litresProduced+sheds[1].litresProduced+sheds[2].litresProduced+sheds[3].litresProduced+sheds[4].litresProduced;
 document.getElementById("totalPerDay").innerHTML="Your Total Milk Production is"+" "+totalMilkProd+"Litres";
 document.getElementById("shed1").innerHTML = "Your production in"+" "+sheds[0].name+" "+"is"+" "+sheds[0].litresProduced+" "+"Litres";
 document.getElementById("shed2").innerHTML = "Your production in"+" "+sheds[1].name+" "+"is"+" "+sheds[0].litresProduced+" "+"Litres";
@@ -45,8 +45,8 @@ function report(sellingPrice, time) {
     if (time=week) {
       result=sellingPrice*week*totalMilkProd;
       document.getElementById("weekRevenue").innerHTML="Your Weekly income is Kshs"+" "+result;
-    }
-    else if (time=year) {
+    };
+    if (time=year) {
       result=sellingPrice*year*totalMilkProd;
         document.getElementById("yearRevenue").innerHTML="Your Yearly income is Kshs"+" "+result;
       }
@@ -56,7 +56,6 @@ function report(sellingPrice, time) {
 };
 //report(document.getElementById("ppltr1").value,document.getElementById("time").value);
 //creates object months for leap year
-var sellingPrice=45;
  var month1={
   name:"January",
   days:31
@@ -118,5 +117,5 @@ document.getElementById("october").innerHTML="Your income for"+" "+month10.name+
 document.getElementById("november").innerHTML="Your income for"+" "+month11.name+" "+"is"+" "+month11.days*totalMilkProd*sellingPrice;
 document.getElementById("december").innerHTML="Your income for"+" "+month12.name+" "+"is"+" "+month12.days*totalMilkProd*sellingPrice;
 var totalYearIncome=(month1.days*totalMilkProd)+(month2.days*totalMilkProd*sellingPrice)+(month3.days*totalMilkProd*sellingPrice)+(month4.days*totalMilkProd*sellingPrice)+(month5.days*totalMilkProd*sellingPrice)+(month6.days*totalMilkProd*sellingPrice)+(month7.days*totalMilkProd*sellingPrice)+(month8.days*totalMilkProd*sellingPrice)+(month9.days*totalMilkProd*sellingPrice)+(month10.days*totalMilkProd*sellingPrice)+(month11.days*totalMilkProd*sellingPrice)+(month12.days*totalMilkProd*sellingPrice);
-document.getElementById("totalYear").innerHTML="Your total income for the year is"+totalYearIncome;
+document.getElementById("totalYear").innerHTML="Your total income for the year is"+" "+totalYearIncome;
 
